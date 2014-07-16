@@ -1,0 +1,12 @@
+﻿@model NHibernateSample.ViewModels.MovieAddViewModel
+
+@{
+    ViewBag.Title = "title";
+}
+
+<h2>title</h2>
+@using (Html.BeginForm())
+{
+    @Html.TextBoxFor(x=>x.Name)
+    <input type="submit" value="Save"/>
+}
